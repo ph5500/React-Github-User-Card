@@ -19,6 +19,7 @@ class App extends React.Component {
     axios
       .get(`https://api.github.com/users/ph5500`)
       .then(response => {
+        console.log(response);
 
         this.setState({ users: response.data })
         console.log("User data", response)
